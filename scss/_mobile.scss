@@ -1,14 +1,14 @@
-// Widescreens
+// Widescreens Extra Large
 @include mediaXl {
   
 }
 
-// Desktops & Laptops
+// Desktops & Laptops Large
 @include mediaLg {
 
 }
 
-// Tablets & Small Laptops
+// Tablets & Small Laptops Medium
 @include mediaMd {
   main {
     align-items: center;
@@ -46,9 +46,20 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+
+    grid-template-columns: 1fr;
+  }
 }
 
-// Smartphones
+// Smartphones Small
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
